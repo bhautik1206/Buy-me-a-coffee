@@ -1,18 +1,32 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
+
+import { QueryClientProvider } from '@tanstack/react-query';
+import { ReactQueryDevtools } from '@tanstack/react-query-devtools';
+import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
-import 'antd/dist/antd.min.css';
-import { Provider } from 'react-redux';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+import App from './App';
+import GlobalStyle from './GlobalStyle';
+
+import { ThemeProvider } from '#/components';
+import Favicon from '#/components/Favicon';
+import queryClient from '#/utils/queryClient';
+import '#/assets/fonts/stylesheet.css';
+
+const container = document.getElementById('root');
+
+const root = createRoot(container, {});
 root.render(
-	<React.StrictMode>
-		<BrowserRouter>
-			<Provider >
-				<App />
-			</Provider>
-		</BrowserRouter>
-	</React.StrictMode>
+  <React.StrictMode>
+    <QueryClientProvider client={queryClient}>
+      <ReactQueryDevtools position="bottom-right" />
+      <ThemeProvider>
+        <BrowserRouter>
+          <GlobalStyle />
+          <Favicon />
+          <App />
+        </BrowserRouter>
+      </ThemeProvider>
+    </QueryClientProvider>
+  </React.StrictMode>
 );
-
