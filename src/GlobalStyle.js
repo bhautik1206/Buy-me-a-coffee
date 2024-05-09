@@ -38,7 +38,7 @@ body[data-sidebar-state="true"] {
 
 // Default text selection color
 ::selection {
-  background: #aed4fc !important;
+  background: #ffffff !important;
   color: #000000 !important;
 }
 
