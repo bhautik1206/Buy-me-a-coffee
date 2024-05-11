@@ -1,16 +1,16 @@
-import React, { Suspense } from "react"
-import { Navigate, Route, Routes, useLocation } from 'react-router-dom';
-import Loader from "#/components/Loader";
+import './App.css';
+import React  from "react"
+import {  Route, Routes, useLocation } from 'react-router-dom';
 
 const App = () => {
   const location=useLocation();
 
   return (
-    <Suspense fallback={Loader}>
+    <div>
       <Routes location={location}>
-
-      </Routes>
-    </Suspense>
+        <Route /> 
+      </Routes>     
+    </div>
   )
 }
 
