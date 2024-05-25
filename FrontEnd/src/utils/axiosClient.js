@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import { ASSET_URL } from '#/config';
+import { ASSET_URL } from '../config';
 
 const EXCLUDE_REDIRECT_PATHS = ['/login'];
 

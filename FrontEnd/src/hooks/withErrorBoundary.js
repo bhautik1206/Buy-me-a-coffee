@@ -4,8 +4,8 @@ import { QueryErrorResetBoundary } from '@tanstack/react-query';
 import PropTypes from 'prop-types';
 import { ErrorBoundary } from 'react-error-boundary';
 
-import ErrorFallback from '#/components/ErrorFallback';
-import Loader from '#/components/Loader';
+import ErrorFallback from '../components/ErrorFallback';
+import Loader from '../components/Loader';
 
 const WithErrorBoundary = (Component, ErrorFallbackComponent) => {
   const Closure = (props) => {

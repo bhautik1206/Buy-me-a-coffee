@@ -1,7 +1,7 @@
 import lodashGet from 'lodash/get';
 
-import { EMAIL_FIELD_VALIDATION, GMAP_FIELD_VALIDATION, VALIDATION_MESSAGES } from '#/constants/messages';
-import * as PATTERNS from '#/constants/patterns';
+import { EMAIL_FIELD_VALIDATION, GMAP_FIELD_VALIDATION, VALIDATION_MESSAGES } from '../constants/messages';
+import * as PATTERNS from '../constants/patterns';
 
 export const getFieldError = ({ error, errors, name }) => {
   const newError = (error && error.message) || (errors && lodashGet(errors, name) && lodashGet(errors, name).message);
