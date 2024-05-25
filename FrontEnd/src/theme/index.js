@@ -22,12 +22,11 @@ const alertWarningLighter = 'hsla(28, 87%, 62%, 0.1)';
 const alertWarningDark = 'hsla(28, 100%, 56%, 1)';
 
 const fonts = {
-  black: '"roboto_black"',
-  bold: '"roboto_bold"',
-  light: '"roboto_light"',
-  regular: '"roboto_regular"',
-  medium: '"roboto_medium"',
-  thin: '"roboto_thin"',
+  black: '"circular_black"',
+  bold: '"circular_bold"',
+  light: '"circular_light"',
+  regular: '"circular_regular"',
+  medium: '"circular_medium"',
 };
 
 const defaultTheme = {

@@ -3,12 +3,10 @@ import intervalToDuration from 'date-fns/intervalToDuration';
 
 import queryClient from './queryClient';
 
-
 export const handleLogOutRequest = () => {
   localStorage.clear('');
   queryClient.removeQueries();
 };
-
 
 /**
  * Format list of breadcrumb for use in `Breadcrumb` component
@@ -164,8 +162,6 @@ export const generateSubscriptionEndDate = (planType, joinDate) => {
 
   return dayBeforeEndDate;
 };
-
-
 
 export const generateTimeSlots = (startTimeStr, endTimeStr) => {
   const slots = [];
