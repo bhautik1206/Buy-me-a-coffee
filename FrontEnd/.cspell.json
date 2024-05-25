@@ -12,15 +12,6 @@
   ],
   "language": "en",
   "noConfigSearch": true,
-  "words": [
-    "Adrixus",
-    "antd",
-    "BUSINESSLISTING",
-    "megalinter",
-    "oxsecurity",
-    "pmmmwh",
-    "svgr",
-    "tanstack"
-  ],
+  "words": ["Adrixus", "antd", "BUSINESSLISTING", "megalinter", "oxsecurity", "pmmmwh", "svgr", "tanstack"],
   "version": "0.2"
 }

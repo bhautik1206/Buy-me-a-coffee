@@ -4,7 +4,7 @@ import {  Route, Routes, useLocation } from 'react-router-dom';
 import Navigation from './module/Navigation/Navigation';
 
 const App = () => {
-  const location=useLocation();
+  const location = useLocation();
 
   return (
     <div>
@@ -12,7 +12,7 @@ const App = () => {
         <Route element={<Navigation/>} index/> 
       </Routes>     
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
