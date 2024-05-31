@@ -5,7 +5,7 @@ import { ThemeProvider as StyledThemeProvider } from 'styled-components';
 
 import GlobalStyle from './GlobalStyle';
 
-import theme from '#/theme';
+import theme from '../../theme/index';
 
 const ThemeProvider = (props) => {
   const { theme: customTheme, children } = props;

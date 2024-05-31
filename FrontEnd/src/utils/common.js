@@ -3,18 +3,12 @@ import intervalToDuration from 'date-fns/intervalToDuration';
 
 import queryClient from './queryClient';
 
-import { S3_BUCKET_URL } from '#/config';
 
 export const handleLogOutRequest = () => {
   localStorage.clear('');
   queryClient.removeQueries();
 };
 
-export const getAssetURL = (filename) => {
-  if (/^(http|\/)/.test(filename)) return filename;
-
-  return `${S3_BUCKET_URL}/${filename}`;
-};
 
 /**
  * Format list of breadcrumb for use in `Breadcrumb` component
@@ -171,13 +165,7 @@ export const generateSubscriptionEndDate = (planType, joinDate) => {
   return dayBeforeEndDate;
 };
 
-export const handleInvoiceDownload = (filename) => {
-  const link = document.createElement('a');
-  link.href = `${S3_BUCKET_URL}/${filename}`;
-  link.download = filename;
-  document.body.append(link);
-  link.click();
-};
+
 
 export const generateTimeSlots = (startTimeStr, endTimeStr) => {
   const slots = [];

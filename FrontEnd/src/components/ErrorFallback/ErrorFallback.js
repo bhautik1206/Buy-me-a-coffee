@@ -4,9 +4,9 @@ import PropTypes from 'prop-types';
 
 import { Container } from './ErrorFallback.styled';
 
-import Error from '#/assets/images/Error.svg';
-import { Button, Typography } from '#/components';
-import Image from '#/components/Image';
+import Error from '../../assets/images/Error.svg';
+import { Button, Typography } from '../Typography';
+import Image from '../Image';
 
 const ErrorFallback = ({ error, resetErrorBoundary }) => {
   return (

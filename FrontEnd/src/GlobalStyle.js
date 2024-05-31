@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-import { device } from '#/constants/layout';
+import { device } from './constants/layout';
 
 const GlobalStyle = createGlobalStyle`
 ::selection {

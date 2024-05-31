@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 
-import { mediaSizes } from '#/constants/layout';
+import { mediaSizes } from '../constants/layout';
 
 /**
  * Dynamic values according to media size. This hook will return values
